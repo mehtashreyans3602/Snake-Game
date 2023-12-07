@@ -7,7 +7,7 @@
 
 To Play the Game, 
 1. Simply Download the Repository 
-2. Open the Game Folder in the Command Prompt and Type the Following to Open it in Visual Studio Code:
+2. Locate the Game Folder in the Command Prompt and Type the Following to Open it in Visual Studio Code:
 ```bash
   code .
 ```
