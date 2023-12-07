@@ -7,10 +7,10 @@
 
 To Play the Game, 
 1. Simply Download the Repository 
-2. Locate the Game Folder in the Command Prompt and Type the Following to Open it in Visual Studio Code:
+2. Right Click on the Folder and Search for Open with Code Option and Click It <br/>OR <br/>Locate the Game Folder in the Command Prompt and Type the Following to Open it in Visual Studio Code:
 ```bash
   code .
 ```
-Or Right Click on the Folder and Search for Open with Code Option and Click It.
+ 
 3. Open Live Server Or Add Live Server
 4. Play!
