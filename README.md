@@ -1,6 +1,6 @@
 # Snake-Game
  Created a Simple Snake Game for the demonstration of Basics of JavaScript with freecodecamp.
- The Repository contains 3 Files and 1 Asset.
+ The Repository contains 3 Files and 1 Image Asset.
  1. index.html: Contains the HTML Code for the Game.
  2. style.css: Contains the CSS Code for the HTML Elements in the Game.
  3. script.js: Contains the Game Logic.
