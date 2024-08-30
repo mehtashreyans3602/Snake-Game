@@ -14,6 +14,19 @@
     <script src="script.js" defer></script>
   </head>
   <body>
+    <div class="mobile-controls">
+      <button id="start-button">Start</button>
+      <button class="mobile-buttons" id="up-button">&uArr;</button>
+      <div class="mobile-horizontal">
+        <button class="mobile-buttons" id="left-button">&lArr;</button>
+        <button class="mobile-buttons" id="right-button">&rArr;</button>
+      </div>
+      <button class="mobile-buttons" id="down-button">&dArr;</button>
+    </div>
+    <div id="logo">
+      <img src="snake-game-ai-gen.png" alt="snake-logo" />
+      <h1 id="instruction-text">press spaceBar to start the game.</h1>
+    </div>
     <div>
       <div class="scores">
         <h1 id="score">000</h1>
@@ -27,7 +40,5 @@
         </div>
       </div>
     </div>
-    <h1 id="instruction-text">press spaceBar to start the game.</h1>
-    <img id="logo" src="snake-game-ai-gen.png" alt="snake-logo" />
   </body>
 </html>

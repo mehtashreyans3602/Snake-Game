@@ -41,12 +41,11 @@ body {
 
 #instruction-text {
     position: absolute;
-    top: 60%;
+    bottom: 0;
     color: #333;
-    width: 300px;
     text-align: center;
     text-transform: capitalize;
-    padding: 30px;
+    padding: 5px;
     margin: 0px;
 }
 
@@ -87,25 +86,96 @@ body {
 
 #logo {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    top: 32.5%;
+}
+
+img {
+    object-fit: contain;
+}
+
+.mobile-controls {
+    display: none;
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     body {
-        width: fit-content;
-        overflow: hidden;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        row-gap: 200px;
     }
 
-    #gameboard {
-        grid-template-columns: repeat(20, 1px);
-        grid-template-rows: repeat(20, 1px);
-        margin: 1px;
+    #game-board {
+        display: grid;
+        grid-template-columns: repeat(20, 12px);
+        grid-template-rows: repeat(20, 12px);
+        margin: 5px;
+    }
+
+    #logo {
+        width: 200px;
+        height: 220px;
+        top: 30%;
+    }
+
+    .game-border-3 {
+        border-width: 15px;
+    }
+
+    .game-border-2 {
+        border-width: 4px;
+    }
+
+    .game-border-1 {
+        border-width: 5px;
     }
 
     #instruction-text {
-        top: 65%;
+        bottom: 0;
+        font-size: 20px;
+        width: fit-content;
+        margin: 0;
+        z-index: 1;
     }
 
+    .mobile-controls {
+        position: fixed;
+        bottom: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
 
+    .mobile-horizontal {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
 
+    #start-button {
+        margin-bottom: 15px;
+        border-radius: 20px;
+        padding: 10px 20px;
+    }
+
+    .mobile-buttons {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 20px 25px;
+        font-size: 18px;
+        border-radius: 200px;
+        cursor: pointer;
+    }
+
+    .mobile-buttons:active {
+        background-color: #45a049;
+    }
 }
