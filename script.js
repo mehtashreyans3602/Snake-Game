@@ -199,12 +199,17 @@ function updateHighScore() {
         highScoreText.textContent = highScore.toString().padStart(3, '0');
     }
     highScoreText.style.display = 'block';
+    highScoreText.style.zIndex = 1000;
 }
 
 function stopGame() {
     clearInterval(gameInterval);
     gameStarted = false;
+    if (window.screen.width < 700) {
+        document.getElementById('instruction-text').innerHTML = "Press the Start Button";
+    }
     instructionText.style.display = 'block';
+
     logo.style.display = 'flex';
     document.getElementById('start-button').style.display = 'block';
 }
