@@ -1,46 +1,47 @@
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin:0;
+    margin: 0;
     font-family: 'VT323', monospace;
+    background-color: rgba(0, 50, 0, 0.3);
 }
 
-body, 
-.snake{
-    background-color: #414141;
+.snake {
+    background-color: green;
 
 }
-#game-board{
+
+#game-board {
     border-radius: 100px;
     display: grid;
-    grid-template-columns: repeat(20,20px);
-    grid-template-rows: repeat(20,20px);
-    margin:5px;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows: repeat(20, 20px);
+    margin: 5px;
 }
 
-.game-border-1{
-    border: #595f43 solid 10px;
+.game-border-1 {
+    border: greenyellow solid 10px;
     border-radius: 30px;
-    box-shadow: inset 0 0 0 10px #595f43;
+    box-shadow: inset 0 0 0 10px greenyellow;
 }
 
-.game-border-2{
-    border: #abb78a solid 8px;
+.game-border-2 {
+    border: rgb(206, 253, 135) solid 8px;
     border-radius: 26px;
-    box-shadow: inset 0 0 0 10px #abb78a;
+    box-shadow: inset 0 0 0 10px rgb(206, 253, 135);
 }
 
-.game-border-3{
-    border: #8b966c solid 30px;
+.game-border-3 {
+    border: rgb(159, 234, 47) solid 30px;
     border-radius: 20px;
-    box-shadow: inset 0 0 0 5px #8b966c;
+    box-shadow: inset 0 0 0 5px rgb(159, 234, 47);
 }
 
-#instruction-text{
+#instruction-text {
     position: absolute;
-    top: 65%;
+    top: 60%;
     color: #333;
     width: 300px;
     text-align: center;
@@ -49,41 +50,62 @@ body,
     margin: 0px;
 }
 
-.scores{
+.scores {
     display: flex;
     justify-content: space-between;
 }
 
-#score{
-    color: #abb78a;
+#score {
+    color: greenyellow;
 }
 
 #score,
-#highScore{
+#highScore {
     font-size: 40px;
     font-weight: bolder;
     margin: 10px 0;
 }
 
-#highScore{
-    color: #d8ddca;
+#highScore {
+    color: rgb(156, 232, 44);
     display: none;
 }
 
 .game-border-3,
 #logo {
-    background-color: #c4cfa3;
+    background-color: rgb(206, 253, 135);
 }
 
-.snake{
-    border: #5a5a5a 1px dotted;
+.snake {
+    border: gray 1px dotted;
 }
 
-.food{
+.food {
     background-color: #dedede;
     border: #999 5px solid;
 }
 
-#logo{
+#logo {
     position: absolute;
+}
+
+
+@media (max-width: 480px) {
+    body {
+        width: fit-content;
+        overflow: hidden;
+    }
+
+    #gameboard {
+        grid-template-columns: repeat(20, 1px);
+        grid-template-rows: repeat(20, 1px);
+        margin: 1px;
+    }
+
+    #instruction-text {
+        top: 65%;
+    }
+
+
+
 }
